@@ -504,7 +504,6 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
-<<<<<<< HEAD
->>>>>>> parent of c84e05a... gitignore
-=======
->>>>>>> parent of c84e05a... gitignore
+
+
+link.read.1.tlog
