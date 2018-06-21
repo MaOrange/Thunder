@@ -423,7 +423,8 @@ bool  MainGame::init()
 
 
 	//exist button
-	auto backLabel = MenuItemLabel::create(Label::createWithTTF("Back","times.ttf",40),this,menu_selector(MainGame::CBback));
+	//auto backLabel = MenuItemLabel::create(Label::createWithTTF("返回","boldChinese.ttf",40),this,menu_selector(MainGame::CBback));
+	auto backLabel = MenuItemLabel::create(Label::createWithTTF("返回","msyh.ttc",40),this,menu_selector(MainGame::CBback));
 
 	backLabel->setPosition(Vec2(size.width*(0.9-0.5),size.height*(0.8-0.5)));
 
