@@ -40,7 +40,7 @@ bool Welcome::init()
 	menu->addChild(opt1);
 	opt1->setTag(100);
 
-	auto opt2 = MenuItemLabel::create(Label::createWithTTF("Settings", "Marker Felt.ttf", 50), CC_CALLBACK_1(Welcome::menuCB, this));
+	auto opt2 = MenuItemLabel::create(Label::createWithTTF("ÉèÖÃ", "msyh.ttc", 50), CC_CALLBACK_1(Welcome::menuCB, this));
 	opt2->setPosition(Vec2(0,-200));
 	menu->addChild(opt2);
 	opt2->setTag(101);

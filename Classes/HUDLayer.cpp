@@ -1,3 +1,4 @@
+#pragma execution_character_set("utf-8")
 #include "HUDLayer.h"
 
 HUDLayer::HUDLayer() {
@@ -15,7 +16,7 @@ bool HUDLayer::init()
 	auto size = Director::getInstance()->getVisibleSize();
 
 	//Score board
-	auto newLabel = Label::createWithTTF(String::createWithFormat("Score:%d",scoreOnShow)->getCString(),"times.ttf",40);
+	auto newLabel = Label::createWithTTF(String::createWithFormat("得分:%d",scoreOnShow)->getCString(),"msyh.ttc",40);
 	newLabel->setPosition(Vec2(size.width*0.2,size.height*0.85));
 	this->addChild(newLabel);
 	scoreLabel = newLabel;
@@ -50,12 +51,12 @@ void HUDLayer::scoreUpdate(float dt)
 	if ((Player::getScore() - scoreOnShow) > 3)
 	{
 		scoreOnShow += 3;
-		scoreLabel->setString(String::createWithFormat("Score:%d",scoreOnShow)->getCString());
+		scoreLabel->setString(String::createWithFormat("得分:%d",scoreOnShow)->getCString());
 	}
 	else if ((Player::getScore() - scoreOnShow) < 10 && (Player::getScore() - scoreOnShow)>0)
 	{
 		scoreOnShow = Player::getScore();
-		scoreLabel->setString(String::createWithFormat("Score:%d", scoreOnShow)->getCString());
+		scoreLabel->setString(String::createWithFormat("得分:%d", scoreOnShow)->getCString());
 	}
 	else
 	{
