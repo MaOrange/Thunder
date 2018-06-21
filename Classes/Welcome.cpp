@@ -28,7 +28,7 @@ bool Welcome::init()
 	Size size = Director::getInstance()->getWinSize();
 
 
-	auto newLabel = Label::createWithTTF("My Game!!", "Marker Felt.ttf", 100);
+	auto newLabel = Label::createWithTTF("MCZ 游戏!!", "msyh.ttc", 100);
 	newLabel->setPosition(Vec2(size.width/2,size.height*3/4));
 	
 
