@@ -11,3 +11,19 @@
  ![image]( https://github.com/MaOrange/Thunder/blob/master/demo.png)
 
  ![image]( https://github.com/MaOrange/Thunder/blob/master/demo2.png)
+
+
+已知问题：
+ 在cocos2d-x中显示中文：
+
+ 以GBK编码cpp文件，再加上
+ #pragma execution_character_set("utf-8")
+：vs可以通过编译并显示中文，但在安卓端无法显示中文（非乱码）
+
+以UTF-8编码cpp，
+：会出现诡异BUG，经常无法通过编译。
+但是可以生成debug.apk并正常显示中文。也可以在github中正确显示更改。
+
+solution：
+1.使用xml？？？？
+2.
