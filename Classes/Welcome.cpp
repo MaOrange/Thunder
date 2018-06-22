@@ -1,3 +1,4 @@
+#pragma execution_character_set("utf-8")
 #include "Welcome.h"
 
 #include<SimpleAudioEngine.h>
@@ -28,18 +29,18 @@ bool Welcome::init()
 	Size size = Director::getInstance()->getWinSize();
 
 
-	auto newLabel = Label::createWithTTF("My Game!!", "Marker Felt.ttf", 100);
+	auto newLabel = Label::createWithTTF("MCZ的游戏", "boldChinese.ttf", 80);
 	newLabel->setPosition(Vec2(size.width/2,size.height*3/4));
 	
 
 	auto menu = Menu::create();
 
-	auto opt1 = MenuItemLabel::create(Label::createWithTTF("Start!","Marker Felt.ttf",50),CC_CALLBACK_1(Welcome::menuCB,this));
+	auto opt1 = MenuItemLabel::create(Label::createWithTTF("开始！", "msyh.ttc",50),CC_CALLBACK_1(Welcome::menuCB,this));
 	opt1->setPosition(Point::ZERO);
 	menu->addChild(opt1);
 	opt1->setTag(100);
 
-	auto opt2 = MenuItemLabel::create(Label::createWithTTF("Settings", "Marker Felt.ttf", 50), CC_CALLBACK_1(Welcome::menuCB, this));
+	auto opt2 = MenuItemLabel::create(Label::createWithTTF("设置", "msyh.ttc", 50), CC_CALLBACK_1(Welcome::menuCB, this));
 	opt2->setPosition(Vec2(0,-200));
 	menu->addChild(opt2);
 	opt2->setTag(101);
