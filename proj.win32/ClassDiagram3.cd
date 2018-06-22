@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="MainGame" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACVoABAAAAABAIIAAMCAACQABBABAAIBERAABAgEAAg=</HashCode>
+      <FileName>D:\Cocos_Programes\Thunder\Classes\MainGame.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player" Collapsed="true">
+    <Position X="6" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAIBAAAAAEQAACAAQAAAQABABA=</HashCode>
+      <FileName>D:\Cocos_Programes\Thunder\Classes\Player.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Welcome" Collapsed="true">
+    <Position X="3.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAgAAACEAAAAAgAAAAAAAAEAAAAAIAABAAAAAAAAA=</HashCode>
+      <FileName>D:\Cocos_Programes\Thunder\Classes\Welcome.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HUDLayer" Collapsed="true">
+    <Position X="1.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAQAAAEAAAAEAAAIAAAEAAIAAAIAAFAAAAAAAAA=</HashCode>
+      <FileName>D:\Cocos_Programes\Thunder\Classes\HUDLayer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Microsoft YaHei UI" Size="9" />
+</ClassDiagram>
