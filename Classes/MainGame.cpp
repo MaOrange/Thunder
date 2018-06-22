@@ -28,10 +28,11 @@ Scene* MainGame::createScene()
 
 	auto hudLayer = HUDLayer::create();
 
+	MainGame::keepHudLayer(hudLayer);
+
 	newScene->addChild(hudLayer,4);
 
 	newScene->addChild(mainGame,1);
-
 
 	return newScene;
 }
@@ -119,7 +120,6 @@ void MainGame::enemyMove(float what)
 			auto goal= Vec2(CCRANDOM_0_1()*size.width, y);
 
 			float time = abs(goal.x-x)/ enemySpeedX;
-
 
 			auto enemyMove = MoveTo::create(time,goal);
 
@@ -324,7 +324,7 @@ void MainGame::RE()
 			enemies.eraseObject(temp);
 			this->removeChild(temp);
 			Player::addScore(80+CCRANDOM_0_1()*40);
-
+			MainGame::getHudLayer()->scoreInit(Player::getScore());
 		}
 		delete tempEnemies;
 	}
@@ -457,6 +457,19 @@ void MainGame::CBback(Ref * pSender)
 
 
 	}
+}
+
+
+HUDLayer * MainGame::hudLayer = nullptr;
+
+HUDLayer * MainGame::getHudLayer()
+{
+	return hudLayer;
+}
+
+void MainGame::keepHudLayer(HUDLayer * theHUD)
+{
+	hudLayer = theHUD;
 }
 
 

@@ -48,21 +48,21 @@ bool HUDLayer::init()
 
 void HUDLayer::scoreUpdate(float dt)
 {
-	if ((Player::getScore() - scoreOnShow) > 3)
-	{
-		scoreOnShow += 3;
-		scoreLabel->setString(String::createWithFormat("得分:%d",scoreOnShow)->getCString());
-	}
-	else if ((Player::getScore() - scoreOnShow) < 10 && (Player::getScore() - scoreOnShow)>0)
-	{
-		scoreOnShow = Player::getScore();
-		scoreLabel->setString(String::createWithFormat("得分:%d", scoreOnShow)->getCString());
-	}
-	else
-	{
-		//impossible
-	}
-	
+	//if ((Player::getScore() - scoreOnShow) > 3)
+	//{
+	//	scoreOnShow += 3;
+	//	scoreLabel->setString(String::createWithFormat("得分:%d",scoreOnShow)->getCString());
+	//}
+	//else if ((Player::getScore() - scoreOnShow) < 10 && (Player::getScore() - scoreOnShow)>0)
+	//{
+	//	scoreOnShow = Player::getScore();
+	//	scoreLabel->setString(String::createWithFormat("得分:%d", scoreOnShow)->getCString());
+	//}
+	//else
+	//{
+	//	//impossible
+	//}
+	//
 }
 
 Action * HUDLayer::removeOne(Sprite* theSp)
@@ -98,4 +98,9 @@ void HUDLayer::deleteLife(Sprite* toDel)
 {
 	toDel->removeFromParentAndCleanup(true);
 	//lives.eraseObject(toDel);
+}
+
+void HUDLayer::scoreInit(int score)
+{
+	scoreLabel->setString(String::createWithFormat("得分:%d", score)->getCString());
 }

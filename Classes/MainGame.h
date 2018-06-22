@@ -2,7 +2,7 @@
 #include<cocos2d.h>
 #include"Player.h"
 #include"Welcome.h"
-
+#include"HUDLayer.h"
 
 USING_NS_CC;
 
@@ -46,8 +46,12 @@ public:
 
 	CREATE_FUNC(MainGame);
 
+	static HUDLayer * hudLayer;
+
+	static HUDLayer * getHudLayer();
 	
-	
+	static void keepHudLayer(HUDLayer* theHUD);
+
 protected:
 	static Label* gameOverLabel;
 

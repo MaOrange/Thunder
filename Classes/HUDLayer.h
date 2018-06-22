@@ -21,9 +21,13 @@ public:
 
 	Label * scoreLabel;
 
+	Label * highScore;
+
 	Vector<Sprite*> lives;
 
 	void deleteLife(Sprite*);
+
+	void scoreInit(int score);
 
 	int scoreOnShow = 0;
 protected:
