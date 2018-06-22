@@ -1,4 +1,4 @@
-#pragma execution_character_set("utf-8")
+ï»¿#pragma execution_character_set("utf-8")
 #include "Welcome.h"
 
 #include<SimpleAudioEngine.h>
@@ -29,18 +29,18 @@ bool Welcome::init()
 	Size size = Director::getInstance()->getWinSize();
 
 
-	auto newLabel = Label::createWithTTF("MCZµÄÓÎÏ·", "boldChinese.ttf", 80);
+	auto newLabel = Label::createWithTTF("MCZçš„æ¸¸æˆ","boldChinese.ttf", 80);
 	newLabel->setPosition(Vec2(size.width/2,size.height*3/4));
 	
 
 	auto menu = Menu::create();
 
-	auto opt1 = MenuItemLabel::create(Label::createWithTTF("¿ªÊ¼£¡", "msyh.ttc",50),CC_CALLBACK_1(Welcome::menuCB,this));
+	auto opt1 = MenuItemLabel::create(Label::createWithTTF("å¼€å§‹ï¼", "msyh.ttc",50),CC_CALLBACK_1(Welcome::menuCB,this));
 	opt1->setPosition(Point::ZERO);
 	menu->addChild(opt1);
 	opt1->setTag(100);
 
-	auto opt2 = MenuItemLabel::create(Label::createWithTTF("ÉèÖÃ", "msyh.ttc", 50), CC_CALLBACK_1(Welcome::menuCB, this));
+	auto opt2 = MenuItemLabel::create(Label::createWithTTF("è®¾ç½®", "msyh.ttc", 50), CC_CALLBACK_1(Welcome::menuCB, this));
 	opt2->setPosition(Vec2(0,-200));
 	menu->addChild(opt2);
 	opt2->setTag(101);

@@ -1,4 +1,4 @@
-#pragma execution_character_set("utf-8")
+ï»¿#pragma execution_character_set("utf-8")
 #include "HUDLayer.h"
 
 HUDLayer::HUDLayer() {
@@ -16,7 +16,7 @@ bool HUDLayer::init()
 	auto size = Director::getInstance()->getVisibleSize();
 
 	//Score board
-	auto newLabel = Label::createWithTTF(String::createWithFormat("µÃ·Ö:%d",scoreOnShow)->getCString(),"msyh.ttc",40);
+	auto newLabel = Label::createWithTTF(String::createWithFormat("å¾—åˆ†:%d",scoreOnShow)->getCString(),"msyh.ttc",40);
 	newLabel->setPosition(Vec2(size.width*0.2,size.height*0.85));
 	this->addChild(newLabel);
 	scoreLabel = newLabel;
@@ -51,12 +51,12 @@ void HUDLayer::scoreUpdate(float dt)
 	//if ((Player::getScore() - scoreOnShow) > 3)
 	//{
 	//	scoreOnShow += 3;
-	//	scoreLabel->setString(String::createWithFormat("µÃ·Ö:%d",scoreOnShow)->getCString());
+	//	scoreLabel->setString(String::createWithFormat("å¾—åˆ†:%d",scoreOnShow)->getCString());
 	//}
 	//else if ((Player::getScore() - scoreOnShow) < 10 && (Player::getScore() - scoreOnShow)>0)
 	//{
 	//	scoreOnShow = Player::getScore();
-	//	scoreLabel->setString(String::createWithFormat("µÃ·Ö:%d", scoreOnShow)->getCString());
+	//	scoreLabel->setString(String::createWithFormat("å¾—åˆ†:%d", scoreOnShow)->getCString());
 	//}
 	//else
 	//{
@@ -102,5 +102,5 @@ void HUDLayer::deleteLife(Sprite* toDel)
 
 void HUDLayer::scoreInit(int score)
 {
-	scoreLabel->setString(String::createWithFormat("µÃ·Ö:%d", score)->getCString());
+	scoreLabel->setString(String::createWithFormat("å¾—åˆ†:%d", score)->getCString());
 }

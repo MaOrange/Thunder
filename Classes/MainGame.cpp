@@ -1,4 +1,4 @@
-#pragma execution_character_set("utf-8")
+ï»¿#pragma execution_character_set("utf-8")
 #include"MainGame.h"
 #include"SimpleAudioEngine.h"
 #include"HUDLayer.h"
@@ -408,7 +408,7 @@ bool  MainGame::init()
 
 
 	//GameOver
-	auto GGLabel = Label::createWithTTF("You have been slain!Äã¹ÒÁË£¡£¡","boldChinese.ttf",40);
+	auto GGLabel = Label::createWithTTF("You have been slain!ä½ æŒ‚äº†ï¼ï¼","boldChinese.ttf",40);
 	GGLabel->setPosition(size.width/2, size.height/2);
 	GGLabel->setVisible(false);
 	GGLabel->setColor(Color3B::RED);
@@ -424,8 +424,8 @@ bool  MainGame::init()
 
 
 	//exist button
-	//auto backLabel = MenuItemLabel::create(Label::createWithTTF("·µ»Ø","boldChinese.ttf",40),this,menu_selector(MainGame::CBback));
-	auto backLabel = MenuItemLabel::create(Label::createWithTTF("·µ»Ø","msyh.ttc",40),this,menu_selector(MainGame::CBback));
+	//auto backLabel = MenuItemLabel::create(Label::createWithTTF("è¿”å›ž","boldChinese.ttf",40),this,menu_selector(MainGame::CBback));
+	auto backLabel = MenuItemLabel::create(Label::createWithTTF("è¿”å›ž","msyh.ttc",40),this,menu_selector(MainGame::CBback));
 
 	backLabel->setPosition(Vec2(size.width*(0.9-0.5),size.height*(0.8-0.5)));
 
